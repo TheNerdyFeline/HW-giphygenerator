@@ -1,0 +1,60 @@
+body {
+    background: #AC91EA;
+}
+
+.container {
+    width: 60em;
+    margin: auto;
+    background: #30A6DD;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    color: #2E4753;
+}
+
+.giphyButtons {
+    margin: auto;
+    display: block;
+}
+
+button, #add-giphy {
+    padding: 1em;
+    margin: 1em;
+    font-size: 1em;
+    font-family: 'Anton', sans-serif;
+    background: #5833B0;
+    border: none;
+}
+
+.giphy {
+    margin: auto;
+    display: block;
+}
+
+p {
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Anton', sans-serif;
+}
+
+form {
+    margin: auto;
+    display: block;
+}
+
+#addGiphy {
+    padding: 1em;
+    margin: 1em;
+    font-size: 1em;
+    font-family: 'Anton', sans-serif;
+    background: #5833B0;
+    border: none;
+}
+
+label {
+    font-size: 1em;
+    font-family: 'Anton', sans-serif;
+}

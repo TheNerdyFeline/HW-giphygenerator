@@ -1,0 +1,27 @@
+<!DOCTYPE>
+<html lang="en">
+    <head>
+	<meta charset="UTF-8">
+	<title>Giphy Generator</title>
+	<!-- jquery link -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<!-- veiwport info for media query -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">	
+    </head>
+    <body>
+	<div class="container">
+	    <h1>Strong Women GIFs</h1>
+	    <form id="addCategory">
+		<label for="giphyInput">Add your own category</label>
+		<input type="text" id="giphyInput"><br>
+		<!-- Button triggers new gipghy category to be added -->
+		<input id="addGiphy" type="submit" value="SUBMIT">
+	    </form>
+	    <div class="giphyButtons"></div>
+	    <div class="gifs"></div>
+	</div> <!-- close container -->
+	<script src="assets/javascript/script.js" type="text/javascript"></script>
+    </body>
+</html>
