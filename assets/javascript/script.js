@@ -1,5 +1,5 @@
 // declare variables
-var topics = ["Strong Women", "Girl Power", "Gilmore Girls", "Female Superheros", "Heroines", "Witches"];
+var topics = ["Strong Women", "Girl Power", "Gilmore Girls", "Female Superheros", "Heroines"];
 var newTopic;
 
 $(document).ready(function(){
@@ -49,11 +49,12 @@ $(document).ready(function(){
 	});
     };  // close gifDisplay
 	
-	// make submit function
+	// make submit function that also clears field
 	$("#addGiphy").on("click", function(event) {
 	    event.preventDefault();
 	    newTopic = $("#giphyInput").val().trim();
 	    topics.push(newTopic);
+	    $("#giphyInput").val("");
 	    renderTopics();
 	});
 

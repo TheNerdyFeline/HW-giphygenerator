@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-    width: 60em;
+    width: 50em;
     margin: auto;
     background: #30A6DD;
 }
@@ -27,6 +27,7 @@ button, #add-giphy {
     font-family: 'Anton', sans-serif;
     background: #5833B0;
     border: none;
+    border-radius: 50%;
 }
 
 .giphy {
@@ -35,14 +36,17 @@ button, #add-giphy {
 }
 
 p {
+    display: box;
+    margin: 1em auto;
     text-align: center;
     font-size: 2em;
     font-family: 'Anton', sans-serif;
+    background: #2C23EE;
+    width: 10em;
 }
 
 form {
-    margin: auto;
-    display: block;
+    margin: 1em;
 }
 
 #addGiphy {
@@ -52,6 +56,7 @@ form {
     font-family: 'Anton', sans-serif;
     background: #5833B0;
     border: none;
+    border-radius: 50%;
 }
 
 label {
