@@ -1,5 +1,5 @@
 // declare variables
-var topics = ["Strong Women", "Girl Power", "Gilmore Girls", "Female Superheros", "Heroines", "Witches"];
+var topics = ["Strong Women", "Girl Power", "Gilmore Girls", "Female Superheros", "Heroines"];
 var newTopic;
 
 $(document).ready(function(){
@@ -21,7 +21,7 @@ $(document).ready(function(){
 	newTopic = $(this).attr("data-name");
 	// encodes user input http ready
 	var searchTopic = encodeURI(newTopic);
-	var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + searchTopic  + "&api_key=dc6zaTOxFJmzC&limit=10";
+	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + searchTopic  + "&api_key=dc6zaTOxFJmzC&limit=10";
 	$.ajax ({
 	    url: queryURL,
 	    method: "GET"
@@ -49,11 +49,12 @@ $(document).ready(function(){
 	});
     };  // close gifDisplay
 	
-	// make submit function
+	// make submit function that also clears field
 	$("#addGiphy").on("click", function(event) {
 	    event.preventDefault();
 	    newTopic = $("#giphyInput").val().trim();
 	    topics.push(newTopic);
+	    $("#giphyInput").val("");
 	    renderTopics();
 	});
 
